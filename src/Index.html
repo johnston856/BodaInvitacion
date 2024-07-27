@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+      </div>
+      
+      <div class="container">
+        <br>
+        <div class="audio-contenedor">
+            <audio id="background-music" loop>
+                  <source src="musica/Ed_Sheeran_-_Perfect_[_YouConvert.net_].mp3" type="audio/mp3">
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+                <button id="play-music" class="boton-musica"><i class="bi bi-play"></i></button>
+        </div>    
+            <header class="header">
+                <p class="announcement">¡Nos casamos!</p>
+                <h1 class="couple-name">Daniela <br>&<br> Catriel</h1>
+            </header>
+            <div class="image-container">
+                <img src="img/Imagen principal.jpeg" alt="Foto de la pareja" class="couple-photo">
+            </div>
+            <div>
+                <section class="agenda">
+                    <h1 class="agenda-title">Agenda la fecha</h1>
+                    <h2 class="agenda-date">19/10/2024</h2>
+                    <p class="agenda-description">
+                        Los esperamos en este día especial para compartir risas, lágrimas y momentos inolvidables. La ceremonia se llevará a cabo el 19 de Octubre del 2024 a las 20:15. Su presencia hará que este día sea aún más memorable. Esperamos verlos allí y compartir juntos la felicidad del amor.
+                    </p>
+                    <div class="agenda-content">
+                        <img src="img/Calendario.svg" alt="Calendario" class="calendar-photo">
+                        <br>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Dani+%26+Catri&dates=20241019T231500Z/20241019T231500Z&details=Comienzo+de+ceremonia+de+Boda+de+Daniela+%26+Catriel.&location=&sf=true&output=xml" class="agenda-button" target="_blank">Agenda la fecha</a>
+                        <div class="payment-info">
+                            <p><strong>Tarjeta</strong></p>
+                            <p>- Adultos: $25.000</p>
+                            <p>- Menores de 10 años: $15.000</p>
+                            <p><strong>Medios de pago:</strong></p>
+                            <p>Transferencia:</p>
+                            <p>- Alias: zapato.dado.dia</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="ceremony-section">
+                    <div class="ceremony-container">
+                        <div class="ceremony-info">
+                            <img src="img/Ceremonia.svg" alt="Ceremonia" class="ceremony-image">
+                            <h2 class="ceremony-title">Ceremonia</h2>
+                            <p class="ceremony-address">Parroquia San José Obrero Avenida Zanni 2640</p>
+                            <a href="https://maps.app.goo.gl/2RGNzAMDh49Wz8bi8" class="ceremony-button" target="_blank">Ver Mapa</a>
+                        </div>
+                        <div class="party-info">
+                            <img src="img/Fiesta.svg" alt="Fiesta" class="party-image">
+                            <h2 class="party-title">Fiesta</h2>
+                            <p class="party-address">Salón Viviana Ricardo Balbín 1555</p>
+                            <p class="dress-code">Código de Vestimenta: Elegante Sport</p>
+                            <a href="https://maps.app.goo.gl/rqGx2dr3YR9w8jcc7" class="party-button" target="_blank">Ver Mapa</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="faq-section">
+                    <h2 class="faq-title">Si todavía tienes dudas...</h2>
+                    <br>
+                    <div class="video-container">
+                        <video id="faq-video" class="faq-video" controls>
+                            <source src="img/BautiInvitando.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                    </div>
+                </section>
+            </div>
+            
+            <section class="confirmation-section">
+                <div class="confirmation-container">
+                    <img src="img/Confirmacion.svg" alt="Confirmar Asistencia" class="confirmation-image">
+                    <br>
+                    <button>
+                        <a href="https://api.whatsapp.com/send?phone=03434290720&text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Dani%20y%20Catri.%20¡Nos%20vemos%20pronto!" class="confirmation-button" target="_blank">
+                            <p>Confirmar asistencia</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                            </svg>
+                        </a>
+                    </button>
+                    <p class="confirmation-text">Confirmar asistencia hasta el 01/09/2024</p>
+                </div>
+            </section>
+            <section class="photo-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="img/Imagen1.jpeg" alt="Foto 1">
+                        <img src="img/Imagen2.jpeg" alt="Foto 2">
+                        <img src="img/Imagen4.jpeg" alt="Foto 4">
+                        <img src="img/Imagen5.jpeg" alt="Foto 5">
+                        <img src="img/Imagen6.jpeg" alt="Foto 6">
+                        <img src="img/Imagen7.jpeg" alt="Foto 7">
+                        <img src="img/Imagen8.jpeg" alt="Foto 8">
+                        <img src="img/Imagen9.jpeg" alt="Foto 9">
+                        <img src="img/Imagen10.jpeg" alt="Foto 10">
+                        <img src="img/Imagen11.jpeg" alt="Foto 11">
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <h2>Esperamos que nos acompañen en este nuevo capítulo de nuestras vidas.</h2>
+            </footer>
+        </div>
+    <script src="carrusel.js"></script>
+    <script src="video-transition.js"></script>
+    <script src="loader.js"></script>
+    <script src="musica.js"></script>
+</body>
+</html>

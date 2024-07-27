@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0ea;
+   
+}
+.loading {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .loader {
+    width: 20px;
+    height: 40px;
+    border-radius: 10px 50px;
+    box-shadow: 0px 0px 5px black;
+    animation: dominos 1s ease infinite;
+  }
+  
+  .loader:nth-child(1) {
+    --left: 80px;
+    animation-delay: 0.325s;
+    background-color: #5d9960;
+  }
+  
+  .loader:nth-child(2) {
+    --left: 70px;
+    animation-delay: 0.5s;
+    background-color: #82a587;
+  }
+  
+  .loader:nth-child(3) {
+    left: 60px;
+    animation-delay: 0.625s;
+    background-color: #8bac74;
+  }
+  
+  .loader:nth-child(4) {
+    animation-delay: 0.74s;
+    left: 50px;
+    background-color: #b9bf90;
+  }
+  
+  .loader:nth-child(5) {
+    animation-delay: 0.865s;
+    left: 40px;
+    background-color: #e7d2ab;
+  }
+  
+  @keyframes dominos {
+    50% {
+      opacity: 0.7;
+    }
+  
+    75% {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  }
+  #background-music {
+    display: none;
+  }
+  .audio-contenedor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 0 0; /* Asegúrate de que no haya márgenes que puedan desalinear el botón */
+    padding: 10px; /* Ajusta el tamaño del botón (aumenta el padding según sea necesario) */
+    font-size: 24px; /* Aumenta el tamaño del ícono dentro del botón */
+  }
+  .boton-musica {
+    background: none; /* Elimina el fondo del botón para que no se vea */
+    border: none; /* Elimina el borde del botón para que no se vea */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-right: 1rem;
+    font-size: 24px;
+  }
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-image: url('img/EucaliptoArriba.png'), url('img/EucaliptoAbajo.png');
+    background-size: contain,contain; /* O usa 'cover' si prefieres que se cubra todo el contenedor */
+    background-repeat: no-repeat,no-repeat;
+    background-position: top center,bottom center; /* Alinea la imagen en la parte superior */
+}
+
+.header {
+    margin-bottom: 2rem;    
+}
+
+.announcement {
+    color: #8c4b3d;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.couple-name {
+    color: #8c4b3d;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: YAEp6N5LTlI-0;
+    margin: 0.5rem 0 0 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.couple-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.agenda {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.agenda-title {
+    color: #8c4b3d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: YAEp6N5LTlI-0;
+    margin: 0.5rem 0;
+}
+
+.agenda-date {
+    color: #8c4b3d;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    font-family: YAEp6N5LTlI-0;
+}
+
+.agenda-description {
+    color: #8c4b3d;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.agenda-content {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.calendar-photo {
+    max-width: 130px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin-bottom: 1rem; /* Espacio entre la foto y el botón */
+}
+
+.agenda-button {
+    display: inline-block;
+    background-color: #8c4b3d;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.agenda-button:hover {
+    background-color: #6b3b2f;
+}
+.payment-info {
+    margin-top: 2rem;
+    text-align: center;
+    color: #8c4b3d;
+    font-size: 1rem;
+}
+
+.payment-info p {
+    margin: 0.5rem 0;
+}
+
+.payment-info strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8c4b3d;
+}
+.ceremony-section {
+    background-image: url('img/FondoFiesta.jpg'); /* Cambia la ruta de la imagen según tu archivo */
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ceremony-container {
+    display: flex;
+    flex-direction: row; /* Por defecto en fila */
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para mejorar la legibilidad */
+    border-radius: 10px;
+}
+
+.ceremony-info, .party-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.ceremony-image, .party-image {
+    width: 110px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.ceremony-title, .party-title {
+    color: #8c4b3d;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    font-family: YAEp6N5LTlI-0;
+}
+
+.ceremony-address, .party-address, .dress-code {
+    color: #8c4b3d;
+    font-size: 1rem;
+}
+
+.ceremony-button, .party-button {
+    display: inline-block;
+    background-color: #8c4b3d;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.ceremony-button:hover, .party-button:hover {
+    background-color: #6b3b2f;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .ceremony-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+}
+.party-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.party-image {
+    width: 110px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.faq-section {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f5f0ea; /* O el color de fondo que prefieras */
+}
+
+.faq-title {
+    font-size: 2rem;
+    color: #8c4b3d;
+    margin-bottom: 1rem;
+    font-family: YAEp6N5LTlI-0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.faq-video {
+    width: 60%; /* Ajusta el ancho del video según el tamaño deseado */
+    max-width: 600px; /* Ajusta el ancho máximo del video */
+    border-radius: 10px;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(-50px); /* Posición inicial fuera de vista */
+    transition: opacity 1s, transform 1s; /* Transiciones */
+}
+
+.faq-video.visible {
+    opacity: 1; /* Hace visible el video */
+    transform: translateY(0); /* Mueve el video a su posición final */
+}
+.confirmation-section {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f5f0ea; /* O el color de fondo que prefieras */
+}
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation-image {
+    width: 100px; /* Ajusta el tamaño de la imagen según tu necesidad */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.confirmation-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #25D366;
+    text-decoration: none;
+    color: #25D366;
+    border-radius: 0.4em;
+    font-size: 17px;
+    transition: 0.5s;
+  }
+  
+  .confirmation-button p {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+  }
+  
+  .confirmation-button svg {
+    margin-left: 0.5em;
+    height: 1em;
+    fill: #25D366;
+    transition: 0.5s;
+  }
+  
+  .confirmation-button:hover p {
+    color: #fff;
+  }
+  
+  .confirmation-button:hover svg {
+    fill: #fff;
+  }
+  
+  .confirmation-button:hover {
+    background-color: #25D366;
+  }
+.confirmation-text {
+    font-size: 1rem;
+    color: #8c8c8c; /* O el color de texto que prefieras */
+}
+.photo-carousel {
+    position: relative;
+    width: 100%; /* Cambia a 100% para que ocupe el ancho del contenedor padre */
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura del carrusel */
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: calc(100% * 11); /* Ajusta según la cantidad de imágenes */
+    height: 100%;
+    animation: scroll 60s linear infinite; /* Cambia la duración según sea necesario */
+}
+
+.carousel-slide img {
+    width: 100vw; /* Asegura que cada imagen tenga el ancho del viewport */
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.footer {
+    color: #8c4b3d; /* Color del texto */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h2 {
+    margin: 0;
+    font-family: YAEp6N5LTlI-0;
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente según sea necesario */
+}
